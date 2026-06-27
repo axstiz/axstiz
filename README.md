@@ -27,7 +27,7 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 - **Anti-hallucination**: кросс-валидация YARA (8 правил) + Sigma (9 правил)
 - **F1 = 0.82** · CI/CD · Docker Compose (5 сервисов) · 16 тестов
 
-[→ Репозиторий](https://github.com/Mitoshi-Team/AI-CyberLogAgent)
+[→ Репозиторий (личный форк)](https://github.com/axstiz/AI-CyberLogAgent)
 
 ---
 
