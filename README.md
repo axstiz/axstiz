@@ -50,8 +50,6 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 
 ## 📈 Алгоритмика
 
-220 задач на LeetCode (78 medium, 28 hard)
-
 ![LeetCode Stats](leetcode-stats.svg)
 
 ---
