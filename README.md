@@ -40,11 +40,11 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 
 ## 🛠 Стек
 
-| Категория | Технологии |
-| --------- | ---------- |
-| **Языки** | Python (asyncio, FastAPI, Pydantic, Pandas) |
-| **AI / LLM** | LangGraph, LangChain, RAG, ChromaDB, Ollama, промптинг |
-| **Инфраструктура** | PostgreSQL, Kafka, Docker, Git, CI/CD (GitHub Actions) |
+| Категория | Технологии                                                      |
+| --------- |-----------------------------------------------------------------|
+| **Языки** | Python (asyncio, FastAPI, Pydantic, Pandas)                     |
+| **AI / LLM** | LangGraph, LangChain, RAG, ChromaDB, Ollama, Prompt Engeneering |
+| **Инфраструктура** | PostgreSQL, Kafka, Docker, Git, CI/CD (GitHub Actions)          |
 
 ---
 
