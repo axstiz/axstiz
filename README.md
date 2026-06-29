@@ -42,8 +42,8 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 
 | Категория | Технологии                                                      |
 | --------- |-----------------------------------------------------------------|
-| **Языки** | Python (asyncio, FastAPI, Pydantic, Pandas)                     |
-| **AI / LLM** | LangGraph, LangChain, RAG, ChromaDB, Ollama, Prompt Engineering |
+| **Языки** | Python (asyncio, FastAPI, Django, Pydantic, Pandas)                     |
+| **AI / LLM** | LangGraph, LangChain, RAG, ChromaDB, Ollama, Prompt Engineering, scikit-learn |
 | **Инфраструктура** | PostgreSQL, Kafka, Docker, Git, CI/CD (GitHub Actions)          |
 
 ---
