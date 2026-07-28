@@ -3,7 +3,6 @@
 📍 Екатеринбург · ✉️ litsummer@mail.ru · 💬 [@Litsummer](https://t.me/Litsummer)
 
 AI-инженер, студент УрФУ (топ-трек «Алгоритмы ИИ»).
-Проектирую AI-пайплайны с LLM, RAG и агентными архитектурами.
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
@@ -53,6 +52,7 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 ![LeetCode Stats](leetcode-stats.svg)
 
 ---
+🌌 **Открыт к работе:** Ищу Junior+ / стажировку в AI-разработке. 
 
 ## 📬 Контакты
 
