@@ -21,14 +21,14 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="266.69824134138537" height="8" fill="#DA5B0B"/>
-                    <rect mask="url(#languages-bar)" x="266.69824134138537" y="0" width="99.0509868362888" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="365.7492281776742" y="0" width="31.55461932272959" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="397.3038475004037" y="0" width="26.917946946719212" height="8" fill="#663399"/>
-                    <rect mask="url(#languages-bar)" x="424.221794447123" y="0" width="25.162249489282896" height="8" fill="#e34c26"/>
-                    <rect mask="url(#languages-bar)" x="449.3840439364059" y="0" width="8.037665165262514" height="8" fill="#ff5a03"/>
-                    <rect mask="url(#languages-bar)" x="457.42170910166834" y="0" width="2.3786344019983097" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="459.8003435036667" y="0" width="0.19965649633332824" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="266.709182392369" height="8" fill="#DA5B0B"/>
+                    <rect mask="url(#languages-bar)" x="266.709182392369" y="0" width="99.05505031226636" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="365.76423270463533" y="0" width="31.55591382207478" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="397.3201465267101" y="0" width="26.91905123082861" height="8" fill="#663399"/>
+                    <rect mask="url(#languages-bar)" x="424.23919775753876" y="0" width="25.163281747512798" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="449.40247950505153" y="0" width="8.037994903111251" height="8" fill="#ff5a03"/>
+                    <rect mask="url(#languages-bar)" x="457.4404744081628" y="0" width="2.3598609047790937" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="459.8003353129419" y="0" width="0.19966468705815116" height="8" fill="#89e051"/>
                 </svg>
                 <div class="field center horizontal-wrap fill-width">
                     <div class="field center no-wrap language">
@@ -94,8 +94,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge all">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="20.312670468633772 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">249</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="20.394247458467643 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">250</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/4033</text>
                                 </svg>
                                 <span class="title">All</span>
@@ -121,8 +121,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="50" height="50" class="gauge hard">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="11.907962771458118 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">35</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="12.248190279214064 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">36</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/967</text>
                                 </svg>
                                 <span class="title">Hard</span>
@@ -138,11 +138,11 @@
                         Skills
                     </h2>
                     <div class="topics">
-                        <div class="label fundamental"><span class="dot">⬤</span> Array <span class="count">x117</span></div>
-                        <div class="label intermediate"><span class="dot">⬤</span> Math <span class="count">x58</span></div>
+                        <div class="label fundamental"><span class="dot">⬤</span> Array <span class="count">x118</span></div>
+                        <div class="label intermediate"><span class="dot">⬤</span> Math <span class="count">x59</span></div>
                         <div class="label fundamental"><span class="dot">⬤</span> String <span class="count">x50</span></div>
                         <div class="label intermediate"><span class="dot">⬤</span> Hash Table <span class="count">x37</span></div>
-                        <div class="label advanced"><span class="dot">⬤</span> Dynamic Programming <span class="count">x26</span></div>
+                        <div class="label advanced"><span class="dot">⬤</span> Dynamic Programming <span class="count">x27</span></div>
                         <div class="label intermediate"><span class="dot">⬤</span> Database <span class="count">x25</span></div>
                         <div class="label intermediate"><span class="dot">⬤</span> Bit Manipulation <span class="count">x24</span></div>
                         <div class="label fundamental"><span class="dot">⬤</span> Sorting <span class="count">x24</span></div>
