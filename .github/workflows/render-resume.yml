@@ -1,0 +1,43 @@
+name: Render Resume
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/data.json"
+      - "tools/resume_gen.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: resume
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate резюме.md from site/data.json
+        run: python tools/resume_gen.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "резюме.md"
+          if git diff --cached --quiet; then
+            echo "резюме.md не изменился — коммит не нужен"
+            exit 0
+          fi
+          git commit -m "Update резюме.md from site/data.json"
+          git push origin main
