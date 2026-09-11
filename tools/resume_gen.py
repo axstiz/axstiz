@@ -32,7 +32,7 @@ def build(data: dict) -> str:
     # ---- шапка ----
     lines.append(f"# {profile.get('fullName', profile.get('name', ''))}  ")
     blank()
-    lines.append(f"Город: {profile.get('location', '')}  ")
+    lines.append(f"📍Город: {profile.get('location', '')}  ")
     blank()
     lines.append(f"Номер телефона: {profile.get('phone', '')}  ")
     blank()
