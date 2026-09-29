@@ -56,7 +56,9 @@
 
 ## Алгоритмика
 
-![LeetCode Stats](leetcode-stats.svg)
+<p align="center">
+  <img src="leetcode-stats.svg" alt="" width="480" />
+</p>
 
 <p align="center">
   <img src="divider.svg" alt="" width="480" />
