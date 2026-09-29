@@ -18,7 +18,7 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 
 ---
 
-## 🔥 Проекты
+## Проекты
 
 ### WaveScan — on-premise AI-анализатор логов кибербезопасности ([Статья на Хабре](https://habr.com/ru/articles/1063584/))
 *Проектный практикум УрФУ (реальный заказчик)*
@@ -34,14 +34,14 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 
 ---
 
-## 🎓 Образование
+## Образование
 
 **УрФУ, ИРИТ-РТФ** — Алгоритмы искусственного интеллекта (2025–2029)  
 **Яндекс.Практикум** — Backend-разработчик (2025–2026)
 
 ---
 
-## 🛠 Стек
+## Стек
 
 | Категория | Технологии                                                      |
 | --------- |-----------------------------------------------------------------|
@@ -52,14 +52,14 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 
 ---
 
-## 📈 Алгоритмика
+## Алгоритмика
 
 ![LeetCode Stats](leetcode-stats.svg)
 
 ---
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1800&color=4ADE80&center=true&vCenter=true&width=600&lines=%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82+%D0%BA+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5+%3A+Junior%2B+%2F+%D1%81%D1%82%D0%B0%D0%B6%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5+%D0%B2+AI-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5" alt="Открыт к работе: Junior+ / стажировке в AI-разработке" width="600" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1800&color=4ADE80&center=true&vCenter=true&width=600&lines=%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82+%D0%BA+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5+%3A+Junior%2B+%2F+%D1%81%D1%82%D0%B0%D0%B6%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5+%D0%B2+AI-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5" alt=" Открыт к работе: Junior+ / стажировке в AI-разработке" width="600" />
 </p>
 
 ## 📬 Контакты
