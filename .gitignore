@@ -1,1 +1,4 @@
 leetcode-stats.svg
+.build/
+.probe/
+__pycache__/

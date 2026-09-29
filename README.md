@@ -1,12 +1,6 @@
 <p align="center">
-  <img src="nick.svg" alt="axstiz" width="184" />
+  <img src="assets/hero.svg" alt="axstiz — AI-инженер, студент УрФУ, Екатеринбург. Открыт к работе." width="520" />
 </p>
-
-# Привет, я Матвей
-
-📍 Екатеринбург · ✉️ litsummer@mail.ru · 💬 [@Litsummer](https://t.me/Litsummer)
-
-AI-инженер, студент УрФУ (топ-трек «Алгоритмы ИИ»).
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
@@ -19,7 +13,6 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 <p align="center">
   <img src="divider.svg" alt="" width="480" />
 </p>
-
 
 ## Образование
 
@@ -69,13 +62,11 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
   <img src="divider.svg" alt="" width="480" />
 </p>
 
-<p align="center">
-  <img src="open.svg" alt="Открыт к работе: Junior+ / стажировка в AI" width="512" />
-</p>
-
 ## 📬 Контакты
 
-[![Telegram](https://img.shields.io/badge/@Litsummer-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Litsummer)
-[![Email](https://img.shields.io/badge/litsummer@mail.ru-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:litsummer@mail.ru)
-[![GitHub](https://img.shields.io/badge/axstiz-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/axstiz)
-[![Gitverse](https://img.shields.io/badge/axstiz-333?style=for-the-badge&logo=git&logoColor=white)](https://gitverse.ru/axstiz)
+<p align="center">
+  <a href="https://t.me/Litsummer"><img src="assets/btn-telegram.svg" alt="Telegram" width="121" height="40" /></a>
+  <a href="mailto:litsummer@mail.ru"><img src="assets/btn-email.svg" alt="litsummer@mail.ru" width="183" height="40" /></a>
+  <a href="https://github.com/axstiz"><img src="assets/btn-github.svg" alt="GitHub" width="103" height="40" /></a>
+  <a href="https://gitverse.ru/axstiz"><img src="assets/btn-gitverse.svg" alt="Gitverse" width="113" height="40" /></a>
+</p>
