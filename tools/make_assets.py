@@ -79,7 +79,7 @@ def build_hero() -> None:
     dot_x, dot_y = PAD + 15, pill_mid
     pill_w = PAD + 36 + stat_w + 20
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{NICK}. {HELLO}. {SUB}. {STATUS}.">
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="{NICK}. {HELLO}. {SUB}. {STATUS}.">
 <title>{NICK} — {HELLO}</title>
 <style>{STYLE}</style>
 <rect class="card" x="0.75" y="0.75" width="{W - 1.5}" height="{H - 1.5}" rx="18" stroke-width="1.5"/>
