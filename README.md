@@ -20,23 +20,6 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
   <img src="divider.svg" alt="" width="480" />
 </p>
 
-## Проекты
-
-### WaveScan — on-premise AI-анализатор логов кибербезопасности ([Статья на Хабре](https://habr.com/ru/articles/1063584/))
-*Проектный практикум УрФУ*
-
-Спроектировал AI-ядро пайплайна потокового анализа логов: Vector → Kafka → LangGraph DAG → Postgres, LLM-анализ совмещён с сигнатурными движками YARA/Sigma в одном графе.
-
-- **8-узловой LangGraph StateGraph** с параллельными AI и детерминированными ветками
-- **Гибридный RAG** (ChromaDB + BM25 + LLM re-rank) для 88 техник MITRE ATT&CK
-
-**F1 = 0.82**
-
-[→ Репозиторий (личный форк)](https://github.com/axstiz/AI-CyberLogAgent)
-
-<p align="center">
-  <img src="divider.svg" alt="" width="480" />
-</p>
 
 ## Образование
 
@@ -55,6 +38,24 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 | **AI и LLM** | LangGraph, LangChain, Scikit-learn, AI-агенты, RAG, Prompt Engineering, API LLM |
 | **Инструменты и БД** | PostgreSQL, Векторные БД (ChromaDB), uv, Git, Docker, YARA, Sigma |
 | **Инфраструктура** | Docker Compose, CI/CD, Kafka (aiokafka, DLQ), Vector |
+
+<p align="center">
+  <img src="divider.svg" alt="" width="480" />
+</p>
+
+## Проекты
+
+### WaveScan — on-premise AI-анализатор логов кибербезопасности ([Статья на Хабре](https://habr.com/ru/articles/1063584/))
+*Проектный практикум УрФУ*
+
+Спроектировал AI-ядро пайплайна потокового анализа логов: Vector → Kafka → LangGraph DAG → Postgres, LLM-анализ совмещён с сигнатурными движками YARA/Sigma в одном графе.
+
+- **8-узловой LangGraph StateGraph** с параллельными AI и детерминированными ветками
+- **Гибридный RAG** (ChromaDB + BM25 + LLM re-rank) для 88 техник MITRE ATT&CK
+
+**F1 = 0.82**
+
+[→ Репозиторий (личный форк)](https://github.com/axstiz/AI-CyberLogAgent)
 
 <p align="center">
   <img src="divider.svg" alt="" width="480" />
