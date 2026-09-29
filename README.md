@@ -2,6 +2,7 @@
   <img src="assets/hero.svg" alt="axstiz — AI-инженер, студент УрФУ, Екатеринбург. Открыт к работе." width="520" />
 </p>
 
+<!-- Бейджи стека. Раскомментируй, если нужен быстрый список технологий.
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=&logoColor=white)](https://langchain-ai.github.io/langgraph/)
@@ -9,6 +10,7 @@
 [![Apache Kafka](https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)](https://kafka.apache.org)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/axstiz)
+-->
 
 <p align="center">
   <img src="divider.svg" alt="" width="480" />
