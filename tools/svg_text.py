@@ -114,32 +114,6 @@ def text_path(
     return pen.getCommands(), total
 
 
-def ink_bounds(family: str, weight: int, s: str, size: float, letter_spacing: float = 0.0):
-    """Границы видимых пикселей строки в системе координат text_path.
-
-    Ось Y направлена вниз, как в SVG, а нуль лежит на базовой линии:
-    y0 отрицательный (выше базовой линии), y1 положительный (ниже).
-    Нужен, чтобы центрировать текст по оптике, а не по базовой линии.
-    """
-    f = load(family, weight)
-    scale = size / f["head"].unitsPerEm
-    cmap, hmtx = f.getBestCmap(), f["hmtx"]
-    glyphs = f.getGlyphSet()
-    fallback = cmap[ord("?")]
-
-    pen = BoundsPen(glyphs)
-    cursor = 0.0
-    for i, ch in enumerate(s):
-        g = cmap.get(ord(ch)) or fallback
-        glyphs[g].draw(TransformPen(pen, Transform(scale, 0, 0, -scale, cursor, 0)))
-        cursor += hmtx[g][0] * scale
-        if i < len(s) - 1:
-            cursor += letter_spacing
-
-    x0, y0, x1, y1 = pen.bounds
-    return x0, y0, x1, y1
-
-
 def cap_height(family: str, weight: int, size: float) -> float:
     """Высота заглавных в единицах размера.
 
