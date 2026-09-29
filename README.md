@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=40&color=B18CFF&center=true&vCenter=true&width=320&letterSpacing=8px&duration=900&pause=800&lines=axstiz" alt="axstiz" width="320" />
+  <img src="nick.svg" alt="axstiz" width="184" />
 </p>
 
 # Привет, я Матвей
