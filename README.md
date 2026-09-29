@@ -70,7 +70,7 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&color=4ADE80&center=true&vCenter=true&width=560&duration=3000&pause=800&lines=%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82+%D0%BA+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5%3A+Junior%2B+%2F+%D1%81%D1%82%D0%B0%D0%B6%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0+%D0%B2+AI" alt="Открыт к работе: Junior+ / стажировка в AI" width="560" />
+  <img src="open.svg" alt="Открыт к работе: Junior+ / стажировка в AI" width="512" />
 </p>
 
 ## 📬 Контакты
