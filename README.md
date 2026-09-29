@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.svg" alt="axstiz — AI-инженер, студент УрФУ, Екатеринбург. Открыт к работе." />
+  <img src="assets/hero.svg" alt="axstiz — AI-инженер, студент УрФУ, Екатеринбург. Открыт к работе." width="587" />
 </p>
 
 <!-- Бейджи стека. Раскомментируй, если нужен быстрый список технологий.
@@ -13,7 +13,7 @@
 -->
 
 <p align="center">
-  <img src="divider.svg" alt="" />
+  <img src="divider.svg" alt="" width="587" />
 </p>
 
 ## Образование
@@ -22,7 +22,7 @@
 **Яндекс.Практикум** — Backend-разработчик (2025–2026)
 
 <p align="center">
-  <img src="divider.svg" alt="" />
+  <img src="divider.svg" alt="" width="587" />
 </p>
 
 ## Стек
@@ -35,7 +35,7 @@
 | **Инфраструктура** | Docker Compose, CI/CD, Kafka (aiokafka, DLQ), Vector |
 
 <p align="center">
-  <img src="divider.svg" alt="" />
+  <img src="divider.svg" alt="" width="587" />
 </p>
 
 ## Проекты
@@ -53,7 +53,7 @@
 [→ Репозиторий (личный форк)](https://github.com/axstiz/AI-CyberLogAgent)
 
 <p align="center">
-  <img src="divider.svg" alt="" />
+  <img src="divider.svg" alt="" width="587" />
 </p>
 
 ## Алгоритмика
@@ -63,7 +63,7 @@
 </p>
 
 <p align="center">
-  <img src="divider.svg" alt="" />
+  <img src="divider.svg" alt="" width="587" />
 </p>
 
 ## 📬 Контакты
