@@ -16,7 +16,9 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/axstiz)
 
----
+<p align="center">
+  <img src="divider.svg" alt="" width="480" />
+</p>
 
 ## Проекты
 
@@ -32,14 +34,18 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 
 [→ Репозиторий (личный форк)](https://github.com/axstiz/AI-CyberLogAgent)
 
----
+<p align="center">
+  <img src="divider.svg" alt="" width="480" />
+</p>
 
 ## Образование
 
 **УрФУ, ИРИТ-РТФ** — Алгоритмы искусственного интеллекта (2025–2029)  
 **Яндекс.Практикум** — Backend-разработчик (2025–2026)
 
----
+<p align="center">
+  <img src="divider.svg" alt="" width="480" />
+</p>
 
 ## Стек
 
@@ -50,16 +56,20 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 | **Инструменты и БД** | PostgreSQL, Векторные БД (ChromaDB), uv, Git, Docker, YARA, Sigma |
 | **Инфраструктура** | Docker Compose, CI/CD, Kafka (aiokafka, DLQ), Vector |
 
----
+<p align="center">
+  <img src="divider.svg" alt="" width="480" />
+</p>
 
 ## Алгоритмика
 
 ![LeetCode Stats](leetcode-stats.svg)
 
----
+<p align="center">
+  <img src="divider.svg" alt="" width="480" />
+</p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1800&color=4ADE80&center=true&vCenter=true&width=600&lines=%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82+%D0%BA+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5+%3A+Junior%2B+%2F+%D1%81%D1%82%D0%B0%D0%B6%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5+%D0%B2+AI-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5" alt=" Открыт к работе: Junior+ / стажировке в AI-разработке" width="600" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1800&color=4ADE80&center=true&vCenter=true&width=560&lines=%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82+%D0%BA+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5%3A+Junior%2B+%2F+%D1%81%D1%82%D0%B0%D0%B6%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0+%D0%B2+AI" alt="Открыт к работе: Junior+ / стажировка в AI" width="560" />
 </p>
 
 ## 📬 Контакты
