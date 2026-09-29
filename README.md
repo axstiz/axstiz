@@ -68,5 +68,6 @@
   <a href="https://t.me/Litsummer"><img src="assets/btn-telegram.svg" alt="Telegram" width="121" height="40" /></a>
   <a href="mailto:litsummer@mail.ru"><img src="assets/btn-email.svg" alt="litsummer@mail.ru" width="183" height="40" /></a>
   <a href="https://github.com/axstiz"><img src="assets/btn-github.svg" alt="GitHub" width="103" height="40" /></a>
-  <a href="https://gitverse.ru/axstiz"><img src="assets/btn-gitverse.svg" alt="Gitverse" width="113" height="40" /></a>
+  <a href="https://habr.com/ru/users/axstiz/"><img src="assets/btn-habr.svg" alt="Хабр" width="92" height="40" /></a>
+  <a href="https://leetcode.com/u/axstiz"><img src="assets/btn-leetcode.svg" alt="LeetCode" width="122" height="40" /></a>
 </p>

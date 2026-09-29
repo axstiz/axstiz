@@ -107,8 +107,10 @@ BUTTONS = [
     ("telegram", "Telegram", icons.TELEGRAM),
     ("email", "litsummer@mail.ru", icons.ENVELOPE),
     ("github", "GitHub", icons.GITHUB),
-    ("gitverse", "Gitverse", icons.GIT),
+    ("habr", "Хабр", icons.HABR),
+    ("leetcode", "LeetCode", icons.LEETCODE),
 ]
+
 
 BTN_STYLE = """
 .bg{fill:#f7f8fb;stroke:#e4e7ef}
@@ -135,7 +137,7 @@ def build_buttons() -> None:
             f'<g class="icon" transform="translate({pad:.1f},{bh / 2 - icon_sz / 2:.2f}) '
             f'scale({scale:.4f})"><path{rule} d="{icon_d}"/></g>'
         )
-        # верх заглавных на одной высоте у всех четырёх
+        # верх заглавных на одной высоте у всех кнопок
         label_y = bh / 2 + cap_height("Inter", 500, 14) / 2
         text, _ = text_path("Inter", 500, label, 14, x=pad + icon_sz + gap, y=label_y)
         svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w:.0f}" height="{bh}" viewBox="0 0 {w:.0f} {bh}" role="img" aria-label="{label}">
