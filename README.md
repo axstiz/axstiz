@@ -1,8 +1,8 @@
-# Привет, я Матвей
-
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=34&pause=1500&color=B18CFF&center=true&vCenter=true&width=420&lines=axstiz" alt="axstiz" width="420" />
 </p>
+
+# Привет, я Матвей
 
 📍 Екатеринбург · ✉️ litsummer@mail.ru · 💬 [@Litsummer](https://t.me/Litsummer)
 
