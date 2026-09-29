@@ -11,7 +11,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import icons  # noqa: E402
-from svg_text import text_path  # noqa: E402
+from svg_text import cap_height, ink_bounds, text_path  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
@@ -66,12 +66,18 @@ def build_hero() -> None:
     nick, nick_w = text_path("Orbitron", 700, NICK, 44, x=PAD, y=64, letter_spacing=0.6)
     hello, hello_w = text_path("Inter", 600, HELLO, 26, x=PAD, y=100)
     sub, sub_w = text_path("Inter", 400, SUB, 15, x=PAD, y=126, letter_spacing=0.1)
-    stat, stat_w = text_path("Inter", 500, STATUS, 16, x=PAD + 36, y=H - 50)
 
-    dot_x, dot_y = PAD + 15, H - 55
-    pill_w = PAD + 36 + stat_w + 20
+    # оптический центр пилюли, а не базовая линия
+    _, ink_y0, _, ink_y1 = ink_bounds("Inter", 500, STATUS, 16)
     pill_h = 40
     pill_y = H - 70
+    pill_mid = pill_y + pill_h / 2
+    stat, stat_w = text_path(
+        "Inter", 500, STATUS, 16, x=PAD + 36, y=pill_mid - (ink_y0 + ink_y1) / 2
+    )
+
+    dot_x, dot_y = PAD + 15, pill_mid
+    pill_w = PAD + 36 + stat_w + 20
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{NICK}. {HELLO}. {SUB}. {STATUS}.">
 <title>{NICK} — {HELLO}</title>
@@ -129,7 +135,9 @@ def build_buttons() -> None:
             f'<g class="icon" transform="translate({pad:.1f},{bh / 2 - icon_sz / 2:.2f}) '
             f'scale({scale:.4f})"><path{rule} d="{icon_d}"/></g>'
         )
-        text, _ = text_path("Inter", 500, label, 14, x=pad + icon_sz + gap, y=bh / 2 + 5)
+        # верх заглавных на одной высоте у всех четырёх
+        label_y = bh / 2 + cap_height("Inter", 500, 14) / 2
+        text, _ = text_path("Inter", 500, label, 14, x=pad + icon_sz + gap, y=label_y)
         svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w:.0f}" height="{bh}" viewBox="0 0 {w:.0f} {bh}" role="img" aria-label="{label}">
 <style>{BTN_STYLE}</style>
 <rect class="bg" x="0.75" y="0.75" width="{w - 1.5:.0f}" height="{bh - 1.5}" rx="10" stroke-width="1.5"/>

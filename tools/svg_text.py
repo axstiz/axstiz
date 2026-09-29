@@ -11,6 +11,7 @@ import urllib.request
 from pathlib import Path
 
 from fontTools.misc.transform import Transform
+from fontTools.pens.boundsPen import BoundsPen
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib import TTFont
@@ -111,3 +112,46 @@ def text_path(
             cursor += letter_spacing
 
     return pen.getCommands(), total
+
+
+def ink_bounds(family: str, weight: int, s: str, size: float, letter_spacing: float = 0.0):
+    """Границы видимых пикселей строки в системе координат text_path.
+
+    Ось Y направлена вниз, как в SVG, а нуль лежит на базовой линии:
+    y0 отрицательный (выше базовой линии), y1 положительный (ниже).
+    Нужен, чтобы центрировать текст по оптике, а не по базовой линии.
+    """
+    f = load(family, weight)
+    scale = size / f["head"].unitsPerEm
+    cmap, hmtx = f.getBestCmap(), f["hmtx"]
+    glyphs = f.getGlyphSet()
+    fallback = cmap[ord("?")]
+
+    pen = BoundsPen(glyphs)
+    cursor = 0.0
+    for i, ch in enumerate(s):
+        g = cmap.get(ord(ch)) or fallback
+        glyphs[g].draw(TransformPen(pen, Transform(scale, 0, 0, -scale, cursor, 0)))
+        cursor += hmtx[g][0] * scale
+        if i < len(s) - 1:
+            cursor += letter_spacing
+
+    x0, y0, x1, y1 = pen.bounds
+    return x0, y0, x1, y1
+
+
+def cap_height(family: str, weight: int, size: float) -> float:
+    """Высота заглавных в единицах размера.
+
+    Нужна, чтобы выровнять верх заглавных у нескольких подписей подряд:
+    центрирование по чернилам разъезжается, когда у одной строки есть
+    выносные элементы, а у соседней нет.
+    """
+    f = load(family, weight)
+    upm = f["head"].unitsPerEm
+    cap = getattr(f["OS/2"], "sCapHeight", 0)
+    if not cap:
+        pen = BoundsPen(f.getGlyphSet())
+        f.getGlyphSet()["H"].draw(pen)
+        cap = pen.bounds[3]
+    return size * cap / upm
