@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=34&pause=1500&color=B18CFF&center=true&vCenter=true&width=420&lines=axstiz" alt="axstiz" width="420" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=40&color=B18CFF&center=true&vCenter=true&width=320&letterSpacing=8px&duration=900&pause=800&lines=axstiz" alt="axstiz" width="320" />
 </p>
 
 # Привет, я Матвей
@@ -70,7 +70,7 @@ AI-инженер, студент УрФУ (топ-трек «Алгоритмы
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1800&color=4ADE80&center=true&vCenter=true&width=560&lines=%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82+%D0%BA+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5%3A+Junior%2B+%2F+%D1%81%D1%82%D0%B0%D0%B6%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0+%D0%B2+AI" alt="Открыт к работе: Junior+ / стажировка в AI" width="560" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&color=4ADE80&center=true&vCenter=true&width=560&duration=3000&pause=800&lines=%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D1%82+%D0%BA+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5%3A+Junior%2B+%2F+%D1%81%D1%82%D0%B0%D0%B6%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0+%D0%B2+AI" alt="Открыт к работе: Junior+ / стажировка в AI" width="560" />
 </p>
 
 ## 📬 Контакты
