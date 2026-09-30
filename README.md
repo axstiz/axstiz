@@ -40,21 +40,9 @@
 
 ## Проекты
 
-### WaveScan — on-premise AI-анализатор логов кибербезопасности ([Статья на Хабре](https://habr.com/ru/articles/1063584/))
-*Проектный практикум УрФУ*
-
-Спроектировал AI-ядро пайплайна потокового анализа логов: Vector → Kafka → LangGraph DAG → Postgres, LLM-анализ совмещён с сигнатурными движками YARA/Sigma в одном графе.
-
-- **8-узловой LangGraph StateGraph** с параллельными AI и детерминированными ветками
-- **Гибридный RAG** (ChromaDB + BM25 + LLM re-rank) для 88 техник MITRE ATT&CK
-
-**F1 = 0.82**
-
-[→ Репозиторий (личный форк)](https://github.com/axstiz/AI-CyberLogAgent)
-
 | Репо | Описание                                                      |
 | --------- |-----------------------------------------------------------------|
-| [**WaveScan**](https://github.com/axstiz/AI-CyberLogAgent) | on-premise AI-анализатор логов кибербезопасности ([Статья на Хабре](https://habr.com/ru/articles/1063584/)) |
+| [**WaveScan**](https://github.com/axstiz/AI-CyberLogAgent) | on-premise AI-анализатор логов кибербезопасности ([*Статья на Хабре*](https://habr.com/ru/articles/1063584/)) |
 | [**hypothesis_factory**](https://github.com/axstiz/hypothesis_factory) | Интеллектуальный инструмент для генерации и приоритизации научно-технологических гипотез в НИИ и промышленных лабораториях. (Норникель AI SCIENCE HACK -> 8 место) |
 | [**Q-polar**](https://github.com/axstiz/Q_polar) | Интерактивный сборник стихов в виде портативной игровой консоли. |
 | [**Квартал**](https://github.com/axstiz/Quarter) | qq |
@@ -63,7 +51,7 @@
   <img src="divider.svg" alt="" width="587" />
 </p>
 
-## Алгоритмика
+## Stats
 
 <p align="center">
   <img src="leetcode-stats.svg" alt="" />
