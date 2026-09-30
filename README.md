@@ -45,9 +45,9 @@
 | Репо | Описание                                                      |
 | --------- |-----------------------------------------------------------------|
 | [**WaveScan**](https://github.com/axstiz/AI-CyberLogAgent) | On-premise AI-анализатор логов кибербезопасности ([*Статья на Хабре*](https://habr.com/ru/articles/1063584/)) |
-| [**hypothesis_factory**](https://github.com/axstiz/hypothesis_factory) | Интеллектуальный инструмент для генерации и приоритизации научно-технологических гипотез в НИИ и промышленных лабораториях. (Норникель AI SCIENCE HACK -> 8 место) |
-| [**Q-polar**](https://github.com/axstiz/Q_polar) | Интерактивный сборник стихов в виде портативной игровой консоли. |
-| [**Квартал**](https://github.com/axstiz/Quarter) | qq |
+| [**hypothesis_factory**](https://github.com/axstiz/hypothesis_factory) | Интеллектуальный инструмент для генерации и приоритизации научно-технологических гипотез в НИИ и промышленных лабораториях (*Норникель AI SCIENCE HACK -> 8 место*) |
+| [**Q-polar**](https://github.com/axstiz/Q_polar) | Интерактивный сборник стихов в виде портативной игровой консоли ([*сайт*](https://axstiz.github.io/Q_polar/)) |
+| [**Quarter**](https://github.com/axstiz/Quarter) | Сервис для квартального планирования команд и простмотра звёздной карты (*Хакатон PostCode Challenge -> 9 место*) |
 
 <p align="center">
   <img src="divider.svg" alt="" width="587" />
