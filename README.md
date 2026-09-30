@@ -2,7 +2,7 @@
   <img src="assets/hero.svg" alt="axstiz — AI-инженер, студент УрФУ, Екатеринбург. Открыт к работе." width="587" />
 </p>
 
-<!-- Бейджи стека. Раскомментируй, если нужен быстрый список технологий.
+<!-- Бейджи стека.
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=&logoColor=white)](https://langchain-ai.github.io/langgraph/)
@@ -51,6 +51,13 @@
 **F1 = 0.82**
 
 [→ Репозиторий (личный форк)](https://github.com/axstiz/AI-CyberLogAgent)
+
+| Репо | Описание                                                      |
+| --------- |-----------------------------------------------------------------|
+| [**WaveScan**](https://github.com/axstiz/AI-CyberLogAgent) | on-premise AI-анализатор логов кибербезопасности ([Статья на Хабре](https://habr.com/ru/articles/1063584/)) |
+| [**hypothesis_factory**](https://github.com/axstiz/hypothesis_factory) | Интеллектуальный инструмент для генерации и приоритизации научно-технологических гипотез в НИИ и промышленных лабораториях. (Норникель AI SCIENCE HACK -> 8 место) |
+| [**Q-polar**](https://github.com/axstiz/Q_polar) | Интерактивный сборник стихов в виде портативной игровой консоли. |
+| [**Квартал**](https://github.com/axstiz/Quarter) | qq |
 
 <p align="center">
   <img src="divider.svg" alt="" width="587" />
