@@ -12,6 +12,8 @@
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/axstiz)
 -->
 
+### [*Web profile*](https://axstiz.github.io/)
+
 <p align="center">
   <img src="divider.svg" alt="" width="587" />
 </p>
