@@ -84,23 +84,19 @@
   "focus": [
     {
       "icon": "flow",
-      "title": "AI-пайплайны",
-      "text": "Работа с потоковыми данными, оркестрация шагов, отказоустойчивость"
+      "title": "AI-пайплайны"
     },
     {
       "icon": "graph",
-      "title": "RAG и агенты",
-      "text": "Гибридный поиск по базам знаний, агенты на графах, архитектура"
+      "title": "RAG и агенты"
     },
     {
       "icon": "code",
-      "title": "Машинное обучение",
-      "text": "Предсказательные модели, CV"
+      "title": "Машинное обучение"
     },
     {
-      "icon": "server",
-      "title": "Инфраструктура",
-      "text": "Docker, очереди, CI/CD, SDD"
+      "icon": "layers",
+      "title": "Архитектура"
     }
   ],
   "poetry": {
@@ -127,11 +123,9 @@
     "FastAPI",
     "Pydantic",
     "LangGraph",
-    "RAG",
     "ChromaDB",
     "NumPy",
     "Pandas",
-    "scikit-learn",
     "PostgreSQL",
     "Kafka",
     "Docker",
@@ -148,9 +142,9 @@
     "words": ["litsummer", "axstiz", "icore"],
     "repeats": 8,
     "columns": [
-      { "dir": "up", "speed": 26 },
-      { "dir": "down", "speed": 34 },
-      { "dir": "up", "speed": 18 }
+      { "dir": "up", "speed": 34 },
+      { "dir": "down", "speed": 44 },
+      { "dir": "up", "speed": 23 }
     ]
   },
   "stack": [

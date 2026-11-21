@@ -93,7 +93,6 @@
   window.addEventListener("resize", requestFrame);
 
   /* ---- появление блоков: маска + blur + направление ---- */
-  const glintTargets = document.querySelectorAll(".glass-card, .stack-strip");
 
   // Направление выезда: блок слева — выходит слева, справа — справа.
   function markDirection(el, offset) {
@@ -105,12 +104,11 @@
 
   // Ступенчатость внутри одной группы: карточки и строки появляются друг за другом.
   // Выполняется до выборки revealTargets, иначе динамические карточки не попадут под наблюдатель.
-  ["#focus-grid", "#contacts-list", "#stack-chips"].forEach(function (sel) {
+  ["#contacts-list", "#stack-chips"].forEach(function (sel) {
     const group = document.querySelector(sel);
     if (!group) return;
     Array.prototype.forEach.call(group.children, function (child, i) {
       child.setAttribute("data-reveal", "");
-      if (sel === "#focus-grid") child.setAttribute("data-tilt", "");
       markDirection(child, 34);
       child.style.setProperty("--rd", i * 70 + "ms");
     });
@@ -146,21 +144,6 @@
       { threshold: 0, rootMargin: "0px 0px -10% 0px" }
     );
     revealTargets.forEach(function (el) { revealObserver.observe(el); });
-  }
-
-  /* ---- блик по стеклу: один раз при появлении ---- */
-  if (!REDUCED && "IntersectionObserver" in window) {
-    const glintObserver = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add("is-glinting");
-          glintObserver.unobserve(entry.target);
-        });
-      },
-      { threshold: 0.4 }
-    );
-    glintTargets.forEach(function (el) { glintObserver.observe(el); });
   }
 
   /* ---- активный пункт навигации ---- */

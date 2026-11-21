@@ -7,6 +7,7 @@
     flow: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.4"/><circle cx="19" cy="12" r="2.4"/><circle cx="5" cy="18" r="2.4"/><path d="M7.4 6h4.2a3 3 0 0 1 3 3v0a3 3 0 0 0 3 3M7.4 18h4.2a3 3 0 0 0 3-3v0a3 3 0 0 1 3-3"/></svg>',
     graph: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/><path d="M6.5 10v2.5a3 3 0 0 0 3 3H14M10 6.5h4.5a3 3 0 0 1 3 3V14"/></svg>',
     code: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 4 12l5 6M15 6l5 6-5 6"/></svg>',
+    layers: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>',
     server: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h.01M7 17h.01"/></svg>'
   };
 
@@ -84,13 +85,17 @@
       const card = document.createElement("article");
       card.className = "focus-card";
 
+      const head = document.createElement("div");
+      head.className = "focus-head";
+
       const icon = document.createElement("div");
       icon.className = "focus-icon";
       icon.innerHTML = FOCUS_ICONS[item.icon] || FOCUS_ICONS.code;
-      card.appendChild(icon);
+      head.appendChild(icon);
 
-      card.appendChild(h("h3", "focus-title", item.title));
-      card.appendChild(h("p", "focus-text", item.text));
+      head.appendChild(h("h3", "focus-title", item.title));
+      card.appendChild(head);
+
       root.appendChild(card);
     });
   }
@@ -161,9 +166,9 @@
 
       const meta = document.createElement("span");
       meta.className = "contact-meta";
-      meta.appendChild(h("span", "contact-label", c.label));
-      meta.appendChild(h("span", "contact-value", c.value));
+      meta.appendChild(h("span", "contact-value", c.label));
       a.appendChild(meta);
+      a.title = c.value;
 
       root.appendChild(a);
     });

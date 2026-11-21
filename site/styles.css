@@ -9,7 +9,7 @@
   --glass-hi: rgba(255, 255, 255, 0.22);
   --glow: rgba(177, 140, 255, 0.45);
   --glow-green: rgba(74, 222, 128, 0.3);
-  --radius: 22px;
+  --radius: 14px;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out: cubic-bezier(0.22, 0.9, 0.28, 1);
 }
@@ -66,7 +66,7 @@ a { color: inherit; }
   z-index: 2;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 30px 22px 60px;
+  padding: 18px 18px 44px;
 }
 
 /* Канвас вставляется из snake.js с инлайновым z-index:0, поэтому
@@ -74,57 +74,26 @@ a { color: inherit; }
    одного z-index:0 не хватало — орбы затирали скелет (в 1.5 раза). */
 body > canvas { z-index: 1 !important; }
 
-.content { display: grid; gap: 22px; }
+.content { display: grid; gap: 12px; }
 
-/* ---- объёмное стекло ---- */
+/* ---- большой блок: плоский стиль как у strip-блока стека ---- */
 .glass-card {
   position: relative;
-  overflow: hidden;
   --r: var(--radius);
-  background:
-    linear-gradient(155deg,
-      rgba(255, 255, 255, 0.16) 0%,
-      rgba(255, 255, 255, 0.05) 30%,
-      rgba(255, 255, 255, 0.02) 48%,
-      rgba(255, 255, 255, 0) 58%,
-      rgba(177, 140, 255, 0.07) 100%),
-    rgba(14, 16, 28, 0.42);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(14, 16, 28, 0.34);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius);
-  padding: 34px;
-  backdrop-filter: blur(2px) saturate(160%);
-  -webkit-backdrop-filter: blur(2px) saturate(160%);
-  box-shadow:
-    0 26px 64px rgba(0, 0, 0, 0.6),
-    0 6px 18px rgba(0, 0, 0, 0.38),
-    inset 0 1px 1px rgba(255, 255, 255, 0.32),
-    inset 0 -22px 42px rgba(0, 0, 0, 0.38),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
-}
-.glass-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  background:
-    radial-gradient(520px 150px at 15% 0%, rgba(255, 255, 255, 0.14), transparent 62%);
-}
-.glass-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  background:
-    linear-gradient(115deg, rgba(255, 255, 255, 0.10), transparent 32%, transparent 68%, rgba(177, 140, 255, 0.08));
+  padding: 16px;
+  backdrop-filter: blur(2px) saturate(150%);
+  -webkit-backdrop-filter: blur(2px) saturate(150%);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.16);
 }
 
 .section-title {
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: 0.3px;
-  margin-bottom: 26px;
+  margin-bottom: 10px;
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
   -webkit-background-clip: text;
   background-clip: text;
@@ -296,11 +265,11 @@ body > canvas { z-index: 1 !important; }
   /* Узкая рейка слева: три линии стоят впритык друг к другу и живут
      рядом с блоками, а не поверх них. Ширина считается под три полосы
      плюс два зазора. */
-  width: 64px;
+  width: 54px;
   /* Ниже канваса со сколопендрой, иначе буквы ленты затирают скелет. */
   z-index: 0;
   display: flex;
-  gap: 5px;
+  gap: 3px;
   padding: 0 4px;
   overflow: hidden;
   pointer-events: none;
@@ -345,7 +314,7 @@ body > canvas { z-index: 1 !important; }
 
 /* ---- reveal: маска + blur + сдвиг ----
    Маска обязана повторять border-radius (round), иначе clip-path срезает
-   скруглённые углы по прямоугольнику и свет из ::before видно квадратами.
+   скруглённые углы по прямоугольнику.
    Тонкая полоска снизу (94%) нужна, чтобы IntersectionObserver видел
    пересечение: полностью срезанный элемент даёт ratio 0.
 
@@ -384,29 +353,6 @@ body > canvas { z-index: 1 !important; }
 /* Элементы, у которых нельзя резать маской: кольцо аватара выходит
    за границы блока, маска его срезала бы. Раскрытие только прозрачностью. */
 [data-reveal].no-mask { clip-path: none; }
-
-/* ---- блик по стеклу при появлении ---- */
-.glass-card::after {
-  transform: translateX(-130%);
-  opacity: 0;
-  background: linear-gradient(
-    105deg,
-    transparent 38%,
-    rgba(255, 255, 255, 0.16) 48%,
-    rgba(177, 140, 255, 0.18) 52%,
-    transparent 62%
-  );
-  background-size: 220% 100%;
-  transition: none;
-}
-.glass-card.is-glinting::after {
-  animation: glare-sweep 1.15s var(--ease-out) forwards;
-}
-@keyframes glare-sweep {
-  0% { transform: translateX(-130%); opacity: 0; }
-  22% { opacity: 1; }
-  100% { transform: translateX(130%); opacity: 0; }
-}
 
 /* ---- hero ---- */
 .hero {
@@ -480,7 +426,7 @@ body > canvas { z-index: 1 !important; }
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 22px;
+  margin-top: 10px;
   align-items: center;
 }
 .status-dot {
@@ -511,18 +457,18 @@ body > canvas { z-index: 1 !important; }
 .hero-location { color: var(--muted); font-size: 0.88rem; }
 
 .hero-desc {
-  margin-top: 22px;
-  line-height: 1.7;
+  margin-top: 10px;
+  line-height: 1.6;
   color: #c9d0df;
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   max-width: 46ch;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 32px;
+  gap: 10px;
+  margin-top: 16px;
 }
 
 /* ---- кнопки ---- */
@@ -530,7 +476,7 @@ body > canvas { z-index: 1 !important; }
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 13px 24px;
+  padding: 9px 16px;
   border-radius: 999px;
   font-size: 0.92rem;
   font-weight: 700;
@@ -560,20 +506,12 @@ body > canvas { z-index: 1 !important; }
   box-shadow: 0 8px 26px rgba(177, 140, 255, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-/* ---- полоса стека ---- */
+/* ---- полоса стека: раскладка, фон берёт от .glass-card ---- */
 .stack-strip {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
   flex-wrap: wrap;
-  --r: 18px;
-  padding: 18px 24px;
-  border-radius: 18px;
-  background: rgba(14, 16, 28, 0.34);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(2px) saturate(150%);
-  -webkit-backdrop-filter: blur(2px) saturate(150%);
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.16);
 }
 .stack-strip-label {
   font-size: 0.72rem;
@@ -585,10 +523,10 @@ body > canvas { z-index: 1 !important; }
 }
 
 /* ---- неоновые чипы ---- */
-.chips { display: flex; flex-wrap: wrap; gap: 9px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip {
   --r: 999px;
-  padding: 6px 14px;
+  padding: 5px 12px;
   border-radius: 999px;
   font-size: 0.8rem;
   font-weight: 600;
@@ -599,10 +537,9 @@ body > canvas { z-index: 1 !important; }
   box-shadow:
     0 0 14px rgba(177, 140, 255, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  transition: box-shadow 0.18s ease;
 }
 .chip:hover {
-  transform: translateY(-2px);
   box-shadow: 0 0 22px rgba(177, 140, 255, 0.4), 0 0 30px rgba(74, 222, 128, 0.2);
 }
 
@@ -610,54 +547,53 @@ body > canvas { z-index: 1 !important; }
 .focus-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: 10px;
 }
 .focus-card {
   position: relative;
-  --r: 18px;
-  padding: 24px;
-  border-radius: 18px;
+  --r: 14px;
+  padding: 9px 14px;
+  border-radius: 14px;
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.015));
   border: 1px solid rgba(255, 255, 255, 0.11);
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.16), inset 0 -12px 26px rgba(0, 0, 0, 0.28);
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 .focus-card:hover {
   border-color: rgba(177, 140, 255, 0.42);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.14),
-    0 12px 34px rgba(0, 0, 0, 0.4),
-    0 0 28px rgba(177, 140, 255, 0.16);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4), 0 0 24px rgba(177, 140, 255, 0.14);
+}
+.focus-head {
+  display: flex;
+  align-items: center;
+  gap: 11px;
 }
 .focus-icon {
-  width: 42px;
-  height: 42px;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 13px;
-  margin-bottom: 16px;
+  border-radius: 10px;
   color: var(--accent);
   background: rgba(177, 140, 255, 0.1);
   border: 1px solid rgba(177, 140, 255, 0.28);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14);
 }
-.focus-icon svg { width: 21px; height: 21px; }
-.focus-title { font-size: 1.06rem; font-weight: 700; margin-bottom: 9px; }
-.focus-text { color: #aab4c8; font-size: 0.9rem; line-height: 1.65; }
+.focus-icon svg { width: 18px; height: 18px; }
+.focus-title { font-size: 1.06rem; font-weight: 700; }
 
 /* ---- Вне кода: альбом и сборник стихов ---- */
 .offcode-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-  gap: 18px;
+  gap: 10px;
 }
 .offcode-card {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  padding: 18px;
-  border-radius: var(--radius-sm, 16px);
+  gap: 10px;
+  padding: 12px;
+  border-radius: 14px;
   background: rgba(255, 255, 255, 0.035);
   border: 1px solid rgba(255, 255, 255, 0.09);
   transition: transform 0.35s var(--ease, ease), border-color 0.35s, background 0.35s;
@@ -682,7 +618,7 @@ body > canvas { z-index: 1 !important; }
   transition: transform 0.5s var(--ease, ease);
 }
 .offcode-card:hover .offcode-cover img { transform: scale(1.05); }
-.offcode-body { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.offcode-body { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .offcode-kicker {
   font-size: 0.7rem;
   font-weight: 800;
@@ -700,26 +636,27 @@ body > canvas { z-index: 1 !important; }
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.offcode-text { color: #b8c0d2; line-height: 1.7; font-size: 0.92rem; }
+.offcode-text { color: #b8c0d2; line-height: 1.55; font-size: 0.96rem; }
 
 /* ---- контакты ---- */
 .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
-  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 .contact-row {
   display: flex;
   align-items: center;
-  gap: 13px;
-  --r: 15px;
-  padding: 15px 18px;
-  border-radius: 15px;
+  gap: 8px;
+  --r: 11px;
+  padding: 8px 10px;
+  border-radius: 11px;
+  flex: 1 1 auto;
+  min-width: 0;
   text-decoration: none;
   color: var(--text);
   background: linear-gradient(155deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
   border: 1px solid rgba(255, 255, 255, 0.11);
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15), inset 0 -10px 20px rgba(0, 0, 0, 0.22);
   transition: all 0.2s ease;
   min-width: 0;
 }
@@ -727,31 +664,29 @@ body > canvas { z-index: 1 !important; }
   translate: 0 -2px;
   background: rgba(177, 140, 255, 0.12);
   border-color: rgba(177, 140, 255, 0.45);
-  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35), 0 0 20px rgba(177, 140, 255, 0.22);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35), 0 0 16px rgba(177, 140, 255, 0.2);
 }
 .contact-icon {
-  width: 36px;
-  height: 36px;
+  width: 26px;
+  height: 26px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 11px;
+  border-radius: 8px;
   color: var(--accent);
   background: rgba(177, 140, 255, 0.1);
   border: 1px solid rgba(177, 140, 255, 0.28);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
-.contact-icon svg { width: 18px; height: 18px; }
-.contact-meta { display: flex; flex-direction: column; min-width: 0; }
-.contact-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
-.contact-value { font-size: 0.9rem; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.contact-icon svg { width: 15px; height: 15px; }
+.contact-meta { display: flex; min-width: 0; }
+.contact-value { font-size: 0.85rem; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
 /* ---- footer ---- */
 .footer {
   position: relative;
   z-index: 1;
-  padding: 26px 22px 42px;
+  padding: 20px 22px 32px;
   text-align: center;
   font-size: 0.78rem;
   color: var(--muted);
@@ -776,23 +711,23 @@ body > canvas { z-index: 1 !important; }
 @media (max-width: 1160px) {
   /* Layout шириной 1080 уже достаёт до рейки слева — отодвигаем контент,
      чтобы карточки стояли рядом с бегущими словами, а не поверх них. */
-  .layout { padding-left: 76px; }
+  .layout { padding-left: 66px; }
 }
 @media (max-width: 900px) {
   .focus-grid { grid-template-columns: 1fr; }
-  .ticker { width: 52px; gap: 4px; padding: 0 3px; }
+  .ticker { width: 46px; gap: 3px; padding: 0 3px; }
   .ticker-track span { font-size: 0.6rem; line-height: 1.2; }
   /* Контент сдвигается за рейку, иначе карточки наезжают на неё. */
-  .layout { padding-left: 60px; }
+  .layout { padding-left: 52px; }
 }
 @media (max-width: 720px) {
   .topbar-nav { display: none; }
   /* Свободной полосы слева на телефоне нет, поэтому рейка становится
      у́же, а контент сдвигается вправо через padding-left — блоки стоят
      рядом с лентой, а не под ней. */
-  .ticker { width: 44px; gap: 3px; padding: 0 2px; }
+  .ticker { width: 40px; gap: 2px; padding: 0 2px; }
   .ticker-track span { font-size: 0.5rem; line-height: 1.2; }
-  .layout { padding-left: 56px; }
+  .layout { padding-left: 48px; }
   /* Сколопендра на телефоне еле читается: тонкие белые линии рисуются
      на 390px экране почти без запаса яркости. Поднимаем яркость —
      filter дешёвый, в отличие от drop-shadow, который съедал ~12% FPS.
@@ -801,17 +736,17 @@ body > canvas { z-index: 1 !important; }
   body > canvas { filter: brightness(2.4); opacity: 0.5; }
   .hero { min-height: auto; padding: 20px 0; }
   .hero-avatar { width: 116px; height: 116px; }
+  .hero-title { font-size: clamp(2rem, 9vw, 2.6rem); letter-spacing: -0.8px; }
   .hero-actions .btn { flex: 1 1 100%; justify-content: center; }
 }
 @media (max-width: 560px) {
   /* Аватар стоял в 12px от края и висел на экране. Слева теперь ещё и
      рейка с бегущими словами, поэтому отступ задаёт padding-left. */
-  .layout { padding: 16px 20px 40px 56px; }
-  .content { gap: 18px; }
-  .glass-card { padding: 22px; }
-  .stack-strip { padding: 15px 17px; gap: 12px; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .section-title { font-size: 1.28rem; }
+  .layout { padding: 12px 14px 36px 48px; }
+  .content { gap: 10px; }
+  .glass-card { padding: 12px; }
+  .stack-strip { gap: 10px; }
+  .section-title { font-size: 1.22rem; margin-bottom: 8px; }
 }
 
 /* ---- отключение анимаций ---- */
@@ -824,7 +759,6 @@ body > canvas { z-index: 1 !important; }
     clip-path: none !important;
     transition: none !important;
   }
-  .glass-card::after { display: none; }
   .hero-avatar-ring { animation: none; }
   .orb { animation: none; }
   .ticker-track { animation: none; }
